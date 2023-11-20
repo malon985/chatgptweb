@@ -6,8 +6,9 @@ const isApp = !!getClientConfig()?.isApp;
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: 
-      "检测到您还没有填写OpenAI Api key,或填写了错误的KEY. <br/>您可以前往 E百分商店[立即购买](/#/https:ebaifen.co/) OpenAi key(可同时兼用3.5和4.0,计费与OpenAi价格一致)<br/>或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。" ,
+    Unauthorized: isApp
+      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
+      : "您好像还没有填写OpenAI Api key,或填写了错误的KEY。您可以前往 **E百分商店** [立即购买](https://ebaifen.co/)  OpenAi key(可同时兼用3.5和4.0 计费与OpenAi价格一致),或者在设置页填入你自己的 OpenAI API Key。" 
   },
   Auth: {
     Title: "需要密码",
