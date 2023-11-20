@@ -3,11 +3,11 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
-import { type Metadata } from 'next';
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "E百分数卡 ChatGPT畅享站",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "E百分 ChatGPT畅享站",
+  description: "创建属于你自己的Ai智能助手.",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "E百分数卡 ChatGPT畅享站",
+    title: "E百分 ChatGPT畅享站",
     statusBarStyle: "default",
   },
 };
